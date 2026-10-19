@@ -103,269 +103,304 @@
 
         </div>
 
-        <!-- TOTAL ASSET SECTION (RINGKAS & ESTETIK DI HP) -->
+        <!-- TOTAL ASSET SECTION (KEMBALI SEPERTI SEMULA) -->
         <div class="px-5 mt-3 w-full">
-            <!-- Label Total Asset -->
-            <p class="font-montserrat-semibold text-[#FBBE21] text-[16px] tracking-wide mb-1.5"">
+            <p class="font-montserrat-semibold text-[#FBBE21] text-[16px] tracking-wide mb-1.5">
                 Total Asset
             </p>
 
-            <!-- Card Container (Proposional: Tinggi pas & Padding Rapi) -->
             <div
-                class=" w-full bg-[#483E3E]/15 rounded-[18px] py-6 px-4 flex items-center justify-center border
-                border-white/5 shadow-inner">
-            <h2
-                class="font-montserrat-semibold text-[26px] text-[#FBBE21] tracking-tight leading-none text-center select-none">
-                Rp 10.000.000
-            </h2>
-        </div>
-    </div>
-
-    <!-- ACTION BUTTONS (BUY, SELL, MORE) -->
-    <div class="grid grid-cols-3 gap-3 px-4 mt-6">
-        <button
-            class="py-2.5 rounded-xl border border-[#FBBE21] text-[#FBBE21] font-montserrat-semibold text-sm hover:bg-[#FBBE21] hover:text-black transition-all">
-            Buy
-        </button>
-        <button
-            class="py-2.5 rounded-xl border border-[#FBBE21] text-[#FBBE21] font-montserrat-semibold text-sm hover:bg-[#FBBE21] hover:text-black transition-all">
-            Sell
-        </button>
-        <button
-            class="py-2.5 rounded-xl border border-[#FBBE21] text-[#FBBE21] font-montserrat-semibold text-sm hover:bg-[#FBBE21] hover:text-black transition-all">
-            More
-        </button>
-    </div>
-
-    <!-- SUBTITLE TEXT -->
-    <div class="px-4 mt-4 text-center">
-        <p class="font-montserrat-semibold text-[#FBBE21] text-sm tracking-wide">
-            duit loe lagi gw puter
-        </p>
-    </div>
-
-    <!-- CANDLESTICK CHART CONTAINER -->
-    <!-- CANDLESTICK CHART CONTAINER (SESUAI POLA GRAFIK TRIV DENGAN COLOR PALETTE ASLI) -->
-    <div class="px-4 mt-3">
-        <div class="bg-[#1A1A1A] border border-neutral-800 rounded-xl p-3 relative overflow-hidden">
-
-            <div class="relative w-full h-[180px] flex flex-col justify-between py-1">
-                <!-- Grid Lines Horizontal -->
-                <div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-20 pl-6">
-                    <div class="border-b border-gray-400 w-full"></div>
-                    <div class="border-b border-gray-400 w-full"></div>
-                    <div class="border-b border-gray-400 w-full"></div>
-                    <div class="border-b border-gray-400 w-full"></div>
-                    <div class="border-b border-gray-400 w-full"></div>
-                </div>
-
-                <!-- Label Angka Y-Axis -->
-                <div
-                    class="absolute left-0 top-0 bottom-0 flex flex-col justify-between text-[9px] text-gray-500 font-mono">
-                    <span>105</span>
-                    <span>100</span>
-                    <span>95</span>
-                    <span>90</span>
-                    <span>85</span>
-                </div>
-
-                <!-- SVG Candlestick (Melebar Mentok dari Kiri x=10 sampai Kanan x=300 Paling Bawah) -->
-                <svg class="w-full h-full pl-6 pt-1 pb-1" viewBox="0 0 310 160" preserveAspectRatio="none">
-                    <!-- 1. Up (Kuning) -->
-                    <line x1="10" y1="18" x2="10" y2="42" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="8" y="24" width="4" height="12" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 2. Up (Kuning) -->
-                    <line x1="18" y1="10" x2="18" y2="38" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="16" y="14" width="4" height="18" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 3. Down (Merah) -->
-                    <line x1="26" y1="14" x2="26" y2="44" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="24" y="16" width="4" height="20" fill="#ef4444" rx="0.5" />
-
-                    <!-- 4. Down (Merah) -->
-                    <line x1="34" y1="30" x2="34" y2="58" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="32" y="34" width="4" height="16" fill="#ef4444" rx="0.5" />
-
-                    <!-- 5. Up (Kuning) -->
-                    <line x1="42" y1="32" x2="42" y2="54" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="40" y="38" width="4" height="12" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 6. Up (Kuning) -->
-                    <line x1="50" y1="20" x2="50" y2="48" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="48" y="26" width="4" height="16" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 7. Down (Merah) -->
-                    <line x1="58" y1="24" x2="58" y2="50" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="56" y="28" width="4" height="14" fill="#ef4444" rx="0.5" />
-
-                    <!-- 8. Down (Merah) -->
-                    <line x1="66" y1="34" x2="66" y2="56" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="64" y="38" width="4" height="12" fill="#ef4444" rx="0.5" />
-
-                    <!-- 9. Up (Kuning) -->
-                    <line x1="74" y1="34" x2="74" y2="58" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="72" y="38" width="4" height="14" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 10. Down (Merah) -->
-                    <line x1="82" y1="36" x2="82" y2="60" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="80" y="42" width="4" height="12" fill="#ef4444" rx="0.5" />
-
-                    <!-- 11. Down (Merah) -->
-                    <line x1="90" y1="44" x2="90" y2="62" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="88" y="48" width="4" height="8" fill="#ef4444" rx="0.5" />
-
-                    <!-- 12. Down (Merah) -->
-                    <line x1="98" y1="48" x2="98" y2="68" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="96" y="52" width="4" height="10" fill="#ef4444" rx="0.5" />
-
-                    <!-- 13. Up (Kuning) -->
-                    <line x1="106" y1="50" x2="106" y2="64" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="104" y="54" width="4" height="4" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 14. Up (Kuning) -->
-                    <line x1="114" y1="48" x2="114" y2="64" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="112" y="54" width="4" height="2" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 15. Down (Merah) -->
-                    <line x1="122" y1="52" x2="122" y2="72" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="120" y="56" width="4" height="10" fill="#ef4444" rx="0.5" />
-
-                    <!-- 16. Up (Kuning) -->
-                    <line x1="130" y1="54" x2="130" y2="70" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="128" y="58" width="4" height="8" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 17. Down (Merah) -->
-                    <line x1="138" y1="56" x2="138" y2="66" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="136" y="58" width="4" height="4" fill="#ef4444" rx="0.5" />
-
-                    <!-- 18. Up (Kuning) -->
-                    <line x1="146" y1="54" x2="146" y2="68" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="144" y="56" width="4" height="8" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 19. Down (Merah) -->
-                    <line x1="154" y1="56" x2="154" y2="76" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="152" y="60" width="4" height="10" fill="#ef4444" rx="0.5" />
-
-                    <!-- 20. Down (Merah) -->
-                    <line x1="162" y1="64" x2="162" y2="84" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="160" y="68" width="4" height="12" fill="#ef4444" rx="0.5" />
-
-                    <!-- 21. Down (Long Red Dump) -->
-                    <line x1="170" y1="72" x2="170" y2="102" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="168" y="78" width="4" height="18" fill="#ef4444" rx="0.5" />
-
-                    <!-- 22. Down (Merah) -->
-                    <line x1="178" y1="90" x2="178" y2="108" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="176" y="94" width="4" height="10" fill="#ef4444" rx="0.5" />
-
-                    <!-- 23. Up (Kuning) -->
-                    <line x1="186" y1="94" x2="186" y2="106" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="184" y="98" width="4" height="4" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 24. Down (Merah) -->
-                    <line x1="194" y1="96" x2="194" y2="112" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="192" y="100" width="4" height="8" fill="#ef4444" rx="0.5" />
-
-                    <!-- 25. Down (Merah) -->
-                    <line x1="202" y1="102" x2="202" y2="114" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="200" y="104" width="4" height="6" fill="#ef4444" rx="0.5" />
-
-                    <!-- 26. Down (Merah Dump) -->
-                    <line x1="210" y1="106" x2="210" y2="138" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="208" y="110" width="4" height="24" fill="#ef4444" rx="0.5" />
-
-                    <!-- 27. Down (Merah) -->
-                    <line x1="218" y1="126" x2="218" y2="152" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="216" y="130" width="4" height="14" fill="#ef4444" rx="0.5" />
-
-                    <!-- 28. Up (Kuning) -->
-                    <line x1="226" y1="136" x2="226" y2="150" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="224" y="140" width="4" height="6" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 29. Up (Kuning) -->
-                    <line x1="234" y1="134" x2="234" y2="148" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="232" y="138" width="4" height="6" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 30. Down (Merah) -->
-                    <line x1="242" y1="136" x2="242" y2="152" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="240" y="140" width="4" height="8" fill="#ef4444" rx="0.5" />
-
-                    <!-- 31. Big Dump Merah (Ke Arah Kanan Bawah) -->
-                    <line x1="252" y1="140" x2="252" y2="168" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="250" y="144" width="4" height="20" fill="#ef4444" rx="0.5" />
-
-                    <!-- 32. Down Merah -->
-                    <line x1="262" y1="152" x2="262" y2="174" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="260" y="156" width="4" height="14" fill="#ef4444" rx="0.5" />
-
-                    <!-- 33. Down Merah -->
-                    <line x1="272" y1="160" x2="272" y2="182" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="270" y="164" width="4" height="12" fill="#ef4444" rx="0.5" />
-
-                    <!-- 34. Up Kuning -->
-                    <line x1="282" y1="166" x2="282" y2="184" stroke="#FBBE21" stroke-width="1.2" />
-                    <rect x="280" y="170" width="4" height="8" fill="#FBBE21" rx="0.5" />
-
-                    <!-- 35. Down Merah Parah -->
-                    <line x1="292" y1="172" x2="292" y2="195" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="290" y="176" width="4" height="14" fill="#ef4444" rx="0.5" />
-
-                    <!-- 36. MENTOK KANAN BAWAH BANGAT (Jatuh Terendah) -->
-                    <line x1="302" y1="180" x2="302" y2="198" stroke="#ef4444" stroke-width="1.2" />
-                    <rect x="300" y="182" width="4" height="12" fill="#ef4444" rx="0.5" />
-                </svg>
-
-            </div>
-
-            <!-- Sumbu X Tanggal -->
-            <div class="flex justify-between pl-6 text-[9px] text-gray-500 font-mono mt-1">
-                <span>1</span>
-                <span>8</span>
-                <span>15</span>
-                <span>22</span>
-                <span>29</span>
-                <span>30</span>
+                class="w-full bg-[#483E3E]/15 rounded-[18px] py-6 px-4 flex items-center justify-center border border-white/5 shadow-inner">
+                <h2 id="totalAssetTxt"
+                    class="font-montserrat-semibold text-[28px] text-[#FBBE21] tracking-tight leading-none text-center select-none transition-all">
+                    Rp 0
+                </h2>
             </div>
         </div>
-    </div>
 
-    <!-- BANNER IMAGE SECTION -->
-    <div class="px-4 mt-4 mb-5">
-        <div class="text-center mb-1.5">
+        <!-- ACTION BUTTONS -->
+        <div class="grid grid-cols-3 gap-3 px-4 mt-6">
+            <button onclick="addAsset()"
+                class="py-2.5 rounded-xl border border-[#FBBE21] text-[#FBBE21] font-montserrat-semibold text-sm hover:bg-[#FBBE21] hover:text-black transition-all active:scale-95">
+                Buy
+            </button>
+            <button onclick="reduceAsset()"
+                class="py-2.5 rounded-xl border border-[#FBBE21] text-[#FBBE21] font-montserrat-semibold text-sm hover:bg-[#FBBE21] hover:text-black transition-all active:scale-95">
+                Sell
+            </button>
+            <button
+                class="py-2.5 rounded-xl border border-[#FBBE21] text-[#FBBE21] font-montserrat-semibold text-sm hover:bg-[#FBBE21] hover:text-black transition-all active:scale-95">
+                More
+            </button>
         </div>
+
+        <!-- SUBTITLE TEXT -->
+        <div class="px-4 mt-4 text-center">
+            <p class="font-montserrat-semibold text-[#FBBE21] text-sm tracking-wide">
+                duit loe lagi gw puter
+            </p>
+        </div>
+
+        <!-- CANDLESTICK CHART CONTAINER -->
+        <!-- CANDLESTICK CHART CONTAINER (SESUAI POLA GRAFIK TRIV DENGAN COLOR PALETTE ASLI) -->
+        <div class="px-4 mt-3">
+            <div class="bg-[#1A1A1A] border border-neutral-800 rounded-xl p-3 relative overflow-hidden">
+
+                <div class="relative w-full h-[180px] flex flex-col justify-between py-1">
+                    <!-- Grid Lines Horizontal -->
+                    <div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-20 pl-6">
+                        <div class="border-b border-gray-400 w-full"></div>
+                        <div class="border-b border-gray-400 w-full"></div>
+                        <div class="border-b border-gray-400 w-full"></div>
+                        <div class="border-b border-gray-400 w-full"></div>
+                        <div class="border-b border-gray-400 w-full"></div>
+                    </div>
+
+                    <!-- Label Angka Y-Axis -->
+                    <div
+                        class="absolute left-0 top-0 bottom-0 flex flex-col justify-between text-[9px] text-gray-500 font-mono">
+                        <span>105</span>
+                        <span>100</span>
+                        <span>95</span>
+                        <span>90</span>
+                        <span>85</span>
+                    </div>
+
+                    <!-- SVG Candlestick (Melebar Mentok dari Kiri x=10 sampai Kanan x=300 Paling Bawah) -->
+                    <svg class="w-full h-full pl-6 pt-1 pb-1" viewBox="0 0 310 160" preserveAspectRatio="none">
+                        <!-- 1. Up (Kuning) -->
+                        <line x1="10" y1="18" x2="10" y2="42" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="8" y="24" width="4" height="12" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 2. Up (Kuning) -->
+                        <line x1="18" y1="10" x2="18" y2="38" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="16" y="14" width="4" height="18" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 3. Down (Merah) -->
+                        <line x1="26" y1="14" x2="26" y2="44" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="24" y="16" width="4" height="20" fill="#ef4444" rx="0.5" />
+
+                        <!-- 4. Down (Merah) -->
+                        <line x1="34" y1="30" x2="34" y2="58" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="32" y="34" width="4" height="16" fill="#ef4444" rx="0.5" />
+
+                        <!-- 5. Up (Kuning) -->
+                        <line x1="42" y1="32" x2="42" y2="54" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="40" y="38" width="4" height="12" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 6. Up (Kuning) -->
+                        <line x1="50" y1="20" x2="50" y2="48" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="48" y="26" width="4" height="16" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 7. Down (Merah) -->
+                        <line x1="58" y1="24" x2="58" y2="50" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="56" y="28" width="4" height="14" fill="#ef4444" rx="0.5" />
+
+                        <!-- 8. Down (Merah) -->
+                        <line x1="66" y1="34" x2="66" y2="56" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="64" y="38" width="4" height="12" fill="#ef4444" rx="0.5" />
+
+                        <!-- 9. Up (Kuning) -->
+                        <line x1="74" y1="34" x2="74" y2="58" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="72" y="38" width="4" height="14" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 10. Down (Merah) -->
+                        <line x1="82" y1="36" x2="82" y2="60" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="80" y="42" width="4" height="12" fill="#ef4444" rx="0.5" />
+
+                        <!-- 11. Down (Merah) -->
+                        <line x1="90" y1="44" x2="90" y2="62" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="88" y="48" width="4" height="8" fill="#ef4444" rx="0.5" />
+
+                        <!-- 12. Down (Merah) -->
+                        <line x1="98" y1="48" x2="98" y2="68" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="96" y="52" width="4" height="10" fill="#ef4444" rx="0.5" />
+
+                        <!-- 13. Up (Kuning) -->
+                        <line x1="106" y1="50" x2="106" y2="64" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="104" y="54" width="4" height="4" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 14. Up (Kuning) -->
+                        <line x1="114" y1="48" x2="114" y2="64" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="112" y="54" width="4" height="2" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 15. Down (Merah) -->
+                        <line x1="122" y1="52" x2="122" y2="72" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="120" y="56" width="4" height="10" fill="#ef4444" rx="0.5" />
+
+                        <!-- 16. Up (Kuning) -->
+                        <line x1="130" y1="54" x2="130" y2="70" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="128" y="58" width="4" height="8" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 17. Down (Merah) -->
+                        <line x1="138" y1="56" x2="138" y2="66" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="136" y="58" width="4" height="4" fill="#ef4444" rx="0.5" />
+
+                        <!-- 18. Up (Kuning) -->
+                        <line x1="146" y1="54" x2="146" y2="68" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="144" y="56" width="4" height="8" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 19. Down (Merah) -->
+                        <line x1="154" y1="56" x2="154" y2="76" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="152" y="60" width="4" height="10" fill="#ef4444" rx="0.5" />
+
+                        <!-- 20. Down (Merah) -->
+                        <line x1="162" y1="64" x2="162" y2="84" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="160" y="68" width="4" height="12" fill="#ef4444" rx="0.5" />
+
+                        <!-- 21. Down (Long Red Dump) -->
+                        <line x1="170" y1="72" x2="170" y2="102" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="168" y="78" width="4" height="18" fill="#ef4444" rx="0.5" />
+
+                        <!-- 22. Down (Merah) -->
+                        <line x1="178" y1="90" x2="178" y2="108" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="176" y="94" width="4" height="10" fill="#ef4444" rx="0.5" />
+
+                        <!-- 23. Up (Kuning) -->
+                        <line x1="186" y1="94" x2="186" y2="106" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="184" y="98" width="4" height="4" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 24. Down (Merah) -->
+                        <line x1="194" y1="96" x2="194" y2="112" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="192" y="100" width="4" height="8" fill="#ef4444" rx="0.5" />
+
+                        <!-- 25. Down (Merah) -->
+                        <line x1="202" y1="102" x2="202" y2="114" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="200" y="104" width="4" height="6" fill="#ef4444" rx="0.5" />
+
+                        <!-- 26. Down (Merah Dump) -->
+                        <line x1="210" y1="106" x2="210" y2="138" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="208" y="110" width="4" height="24" fill="#ef4444" rx="0.5" />
+
+                        <!-- 27. Down (Merah) -->
+                        <line x1="218" y1="126" x2="218" y2="152" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="216" y="130" width="4" height="14" fill="#ef4444" rx="0.5" />
+
+                        <!-- 28. Up (Kuning) -->
+                        <line x1="226" y1="136" x2="226" y2="150" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="224" y="140" width="4" height="6" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 29. Up (Kuning) -->
+                        <line x1="234" y1="134" x2="234" y2="148" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="232" y="138" width="4" height="6" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 30. Down (Merah) -->
+                        <line x1="242" y1="136" x2="242" y2="152" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="240" y="140" width="4" height="8" fill="#ef4444" rx="0.5" />
+
+                        <!-- 31. Big Dump Merah (Ke Arah Kanan Bawah) -->
+                        <line x1="252" y1="140" x2="252" y2="168" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="250" y="144" width="4" height="20" fill="#ef4444" rx="0.5" />
+
+                        <!-- 32. Down Merah -->
+                        <line x1="262" y1="152" x2="262" y2="174" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="260" y="156" width="4" height="14" fill="#ef4444" rx="0.5" />
+
+                        <!-- 33. Down Merah -->
+                        <line x1="272" y1="160" x2="272" y2="182" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="270" y="164" width="4" height="12" fill="#ef4444" rx="0.5" />
+
+                        <!-- 34. Up Kuning -->
+                        <line x1="282" y1="166" x2="282" y2="184" stroke="#FBBE21" stroke-width="1.2" />
+                        <rect x="280" y="170" width="4" height="8" fill="#FBBE21" rx="0.5" />
+
+                        <!-- 35. Down Merah Parah -->
+                        <line x1="292" y1="172" x2="292" y2="195" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="290" y="176" width="4" height="14" fill="#ef4444" rx="0.5" />
+
+                        <!-- 36. MENTOK KANAN BAWAH BANGAT (Jatuh Terendah) -->
+                        <line x1="302" y1="180" x2="302" y2="198" stroke="#ef4444" stroke-width="1.2" />
+                        <rect x="300" y="182" width="4" height="12" fill="#ef4444" rx="0.5" />
+                    </svg>
+
+                </div>
+
+                <!-- Sumbu X Tanggal -->
+                <div class="flex justify-between pl-6 text-[9px] text-gray-500 font-mono mt-1">
+                    <span>1</span>
+                    <span>8</span>
+                    <span>15</span>
+                    <span>22</span>
+                    <span>29</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- BANNER IMAGE SECTION -->
+        <div class="px-4 mt-4 mb-5">
+            <div class="text-center mb-1.5">
+            </div>
+            <div
+                class="w-full h-[150px] rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 flex items-center justify-center">
+                <img id="bannerImg" src="banner.jpg" alt="Stroberi 11 Gacor" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- BOTTOM NAVIGATION BAR (FIXED AT BOTTOM) -->
         <div
-            class="w-full h-[150px] rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 flex items-center justify-center">
-            <img id="bannerImg" src="banner.jpg" alt="Stroberi 11 Gacor" class="w-full h-full object-cover">
+            class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[412px] bg-[#121212] border-t border-neutral-800 px-6 py-2.5 flex justify-between items-center z-50">
+
+            <!-- Home -->
+            <button class="flex flex-col items-center gap-1 text-[#FBBE21]">
+                <i class="ph-fill ph-house text-xl"></i>
+            </button>
+
+            <!-- Market / Store -->
+            <button class="flex flex-col items-center gap-1 text-gray-400 hover:text-[#FBBE21] transition-colors">
+                <i class="ph ph-storefront text-xl"></i>
+            </button>
+
+            <!-- Wallet -->
+            <button class="flex flex-col items-center gap-1 text-gray-400 hover:text-[#FBBE21] transition-colors">
+                <i class="ph ph-wallet text-xl"></i>
+            </button>
+
+            <!-- Profile -->
+            <button class="flex flex-col items-center gap-1 text-gray-400 hover:text-[#FBBE21] transition-colors">
+                <i class="ph ph-user text-xl"></i>
+            </button>
+
         </div>
-    </div>
-
-    <!-- BOTTOM NAVIGATION BAR (FIXED AT BOTTOM) -->
-    <div
-        class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[412px] bg-[#121212] border-t border-neutral-800 px-6 py-2.5 flex justify-between items-center z-50">
-
-        <!-- Home -->
-        <button class="flex flex-col items-center gap-1 text-[#FBBE21]">
-            <i class="ph-fill ph-house text-xl"></i>
-        </button>
-
-        <!-- Market / Store -->
-        <button class="flex flex-col items-center gap-1 text-gray-400 hover:text-[#FBBE21] transition-colors">
-            <i class="ph ph-storefront text-xl"></i>
-        </button>
-
-        <!-- Wallet -->
-        <button class="flex flex-col items-center gap-1 text-gray-400 hover:text-[#FBBE21] transition-colors">
-            <i class="ph ph-wallet text-xl"></i>
-        </button>
-
-        <!-- Profile -->
-        <button class="flex flex-col items-center gap-1 text-gray-400 hover:text-[#FBBE21] transition-colors">
-            <i class="ph ph-user text-xl"></i>
-        </button>
 
     </div>
 
-    </div>
+    <!-- JAVASCRIPT ANIMASI COUNT-UP (BUY) & COUNT-DOWN (SELL) -->
+    <script>
+        // Animasi Naik dari 0 ke Rp 10.000.000 (Tombol Buy)
+        function addAsset() {
+            animateAsset(0, 10000000);
+        }
 
+        // Animasi Turun dari 10.000.000 ke Rp 0 (Tombol Sell)
+        function reduceAsset() {
+            animateAsset(10000000, 0);
+        }
+
+        function animateAsset(startVal, endVal) {
+            const txt = document.getElementById("totalAssetTxt");
+            const duration = 1500; // 1.5 detik
+            const startTime = performance.now();
+
+            function updateNumber(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                // Formula Easing Out
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                const currentVal = Math.floor(startVal + (endVal - startVal) * easeProgress);
+
+                // Format ke rupiah (Rp X.XXX.XXX)
+                txt.innerText = "Rp " + currentVal.toLocaleString("id-ID");
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                } else {
+                    txt.innerText = "Rp " + endVal.toLocaleString("id-ID");
+                }
+            }
+
+            requestAnimationFrame(updateNumber);
+        }
+    </script>
 </body>
